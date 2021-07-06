@@ -1,7 +1,6 @@
-puts "combien d'étages"
+puts "combien d'étages ?"
 Etage=gets.chomp.to_i
 
 Etage.times do |i|
-   puts "#" * (i-1)
- end
+    puts  " " * (Etage-(i+1)) + "#" * (i+1)
  end
